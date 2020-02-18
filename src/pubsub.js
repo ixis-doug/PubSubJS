@@ -11,16 +11,10 @@
     var PubSub = {};
     root.PubSub = PubSub;
 
-    var define = root.define;
-
     factory(PubSub);
 
-    // AMD support
-    if (typeof define === 'function' && define.amd){
-        define(function() { return PubSub; });
-
-        // CommonJS and Node.js module support
-    } else if (typeof exports === 'object'){
+    // CommonJS and Node.js module support
+    if (typeof exports === 'object'){
         if (module !== undefined && module.exports) {
             exports = module.exports = PubSub; // Node.js specific `module.exports`
         }
