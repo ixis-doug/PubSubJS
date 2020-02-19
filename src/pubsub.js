@@ -9,7 +9,6 @@
     'use strict';
 
     var PubSub = {};
-    root.PubSub = PubSub;
 
     factory(PubSub);
 
