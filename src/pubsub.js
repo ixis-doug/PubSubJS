@@ -5,7 +5,7 @@
  * https://github.com/mroderick/PubSubJS
  */
 
-(function (root, factory){
+(function (factory){
     'use strict';
 
     var PubSub = {};
@@ -21,7 +21,7 @@
         module.exports = exports = PubSub; // CommonJS
     }
 
-}(( typeof window === 'object' && window ) || this, function (PubSub){
+}(function (PubSub){
     'use strict';
 
     var messages = {},
